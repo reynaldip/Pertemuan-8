@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int Nambah(int x, int y)
+{
+    int Hasil;
+    Hasil=x+y;
+    return Hasil;
+}
+
+int Ngurang(int x, int y)
+{
+    int Hasil;
+    Hasil=x-y;
+    return Hasil;
+}
+
+int main()
+{
+    int Bil1, Bil2, Result1, Result2;
+    cout<<"Berapa bilangan pertamanya tong? ";
+    cin>>Bil1;
+    cout<<"Berapa bilangan keduanya tong? ";
+    cin>>Bil2;
+
+    Result1=Nambah(Bil1, Bil2);
+    Result2=Ngurang(Bil1, Bil2);
+
+    cout<<endl<<"Hasil tambahnya nih tong "<<Result1;
+    cout<<endl<<"Hasil kurangnya nih tong "<<Result2;
+}
