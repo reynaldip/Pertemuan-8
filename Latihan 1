@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+float Nambah(float x, float y)
+{
+    float Hasil;
+    Hasil=x+y;
+    return Hasil;
+}
+
+float Ngurang(float x, float y)
+{
+    float Hasil;
+    Hasil=x-y;
+    return Hasil;
+}
+float kali (float x, float y)
+{
+    float Hasil;
+    Hasil=x*y;
+    return Hasil;
+}
+float bagi (float x, float y)
+{
+    float Hasil;
+    Hasil=x/y;
+    return Hasil;
+}
+int mod (int x, int y)
+{
+    int Hasil;
+    Hasil=x%y;
+    return Hasil;
+}
+
+int main()
+{
+    float Bil1, Bil2, Result1, Result2, Result3, Result4, Result5;
+    cout<<"Berapa bilangan pertamanya tong? ";
+    cin>>Bil1;
+    cout<<"Berapa bilangan keduanya tong? ";
+    cin>>Bil2;
+
+    Result1=Nambah(Bil1, Bil2);
+    Result2=Ngurang(Bil1, Bil2);
+    Result3=kali(Bil1, Bil2);
+    Result4=bagi(Bil1, Bil2);
+    Result5=mod(Bil1, Bil2);
+
+    cout<<endl<<"Hasil tambahnya nih tong "<<Result1;
+    cout<<endl<<"Hasil kurangnya nih tong "<<Result2;
+    cout<<endl<<"Hasil kalinya nih tong "<<Result3;
+    cout<<endl<<"Hasil baginya nih tong "<<Result4;
+    cout<<endl<<"Hasil modulusnya nih tong "<<Result5;
+
+
+}
